@@ -10,11 +10,15 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;color:#2
 .hero{background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);color:#fff;padding:70px 20px;text-align:center}
 .hero h1{font-size:38px;margin-bottom:10px}
 .hero p{font-size:18px;max-width:700px;margin:auto}
-.btn{display:inline-block;margin-top:25px;padding:14px 28px;background:#ffb703;color:#000;text-decoration:none;font-weight:bold;border-radius:6px}
+.btn{display:inline-block;margin-top:25px;padding:14px 28px;background:#ffb703;color:#000;text-decoration:none;font-weight:bold;border-radius:6px;border:none;cursor:pointer}
 
 .section{padding:50px 20px;max-width:1100px;margin:auto}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 .card{background:#fff;border-radius:10px;padding:25px;box-shadow:0 5px 15px rgba(0,0,0,.08)}
+
+.form-box{max-width:520px;margin:40px auto 0;background:#fff;padding:30px;border-radius:10px;box-shadow:0 8px 18px rgba(0,0,0,.08)}
+.form-box h3{text-align:center;margin-top:0}
+input{width:100%;padding:12px;margin:10px 0;border-radius:5px;border:1px solid #ccc;font-size:15px}
 
 .footer{background:#111;color:#ccc;text-align:center;padding:25px;font-size:14px}
 small{color:#888}
@@ -27,11 +31,11 @@ small{color:#888}
 <div class="hero">
 <h1>Fitness & Weight Loss</h1>
 <p>Discover the best supplements, workouts and simple nutrition tips to help you burn fat, build muscle and stay healthy.</p>
-<a class="btn" href="#start">Start Your Fitness Journey</a>
+<a class="btn" href="#lead">Get Free Fitness Guide</a>
 </div>
 
 <!-- WHY -->
-<div class="section" id="start">
+<div class="section">
 <h2>Why Follow Our Fitness & Weight Loss Guide?</h2>
 <div class="grid">
 <div class="card">
@@ -68,9 +72,33 @@ small{color:#888}
 </div>
 </div>
 
+<!-- LEAD FORM -->
+<div class="hero" id="lead">
+<h2>Get Your Free Fitness & Weight Loss Starter Guide</h2>
+<p>Join our email list and receive simple workout tips, supplement guides and fat loss strategies.</p>
+
+<div class="form-box">
+
+<!-- Replace action URL later with your email tool -->
+<form action="#" method="post">
+<h3>Free Guide Signup</h3>
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email Address" required>
+
+<button class="btn" type="submit">Get My Free Guide</button>
+
+<p style="font-size:13px;color:#666;text-align:center;margin-top:10px;">
+We respect your privacy. Unsubscribe anytime.
+</p>
+</form>
+
+</div>
+</div>
+
 <!-- CTA -->
-<div class="hero">
-<h2>Ready to Improve Your Body & Health?</h2>
+<div class="section" style="text-align:center">
+<h2>Ready to Start Your Fitness Journey?</h2>
 <p>Check our recommended fitness and weight loss supplements with honest reviews.</p>
 <a class="btn" href="https://haseagaming.warface.co.uk/">View Recommended Products</a>
 </div>
